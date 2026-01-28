@@ -1,19 +1,24 @@
-# mad_project
+# Reclaimify - EduVerse Campus App
 
-A new Flutter project.
+A comprehensive Flutter-based university campus management application featuring:
 
-## Getting Started
+**Core Modules:**
+- 📢 Announcements - Broadcast important information to students
+- 🏪 Student Marketplace - Buy and sell items within campus
+- 🔍 Lost & Found - Report and find lost items
+- 📋 Timetable Management - View and manage class schedules
+- 💼 Placements & Recruiting - Job postings and recruiter management
+- 🎓 Faculty Connections - Connect with faculty and advisors
+- 📝 Complaints System - Report and track issues
+- 🤖 AI Study Planner - Intelligent study scheduling
 
-This project is a starting point for a Flutter application.
+**Advanced Features:**
+- 🔔 Real-time Notifications (FCM V1 push + local mobile)
+- 👤 Multi-role Support (Student, Admin, Recruiter, Faculty)
+- 🔐 Secure Firebase Authentication
+- 📁 Cloud Storage Integration
+- 🌙 Dark Mode Support
+- 📱 Fully Responsive Design
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-
-
-hanan bkl .... 
+**Tech Stack:**
+Flutter, Firebase (Auth/Firestore/Storage/Messaging), GetX, Google APIs
