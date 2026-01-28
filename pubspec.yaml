@@ -1,0 +1,99 @@
+name: reclaimify
+description: A new Flutter project.
+publish_to: 'none'
+
+version: 1.0.0+2 # Bumped build number
+
+environment:
+  sdk: '>=3.2.0 <4.0.0' # Updated minimum SDK for newer packages
+  flutter: '>=3.24.0'   # Updated to match latest package requirements
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # --- Firebase Core & Auth ---
+  firebase_core: ^3.10.0      # Core is currently at 3.x stable
+  firebase_auth: ^5.3.3       # Auth stable is 5.x
+  cloud_firestore: ^5.5.0     # Firestore stable is 5.x
+  firebase_storage: ^12.3.6
+  google_sign_in: ^6.2.2
+  cloud_functions: ^5.1.0
+  firebase_messaging: ^15.1.6
+
+  # --- Notifications ---
+  # MAJOR UPDATE: Moved from v13 to v18+. Breaking changes likely in code.
+  flutter_local_notifications: ^18.0.1
+  flutter_local_notifications_linux: ^5.0.0
+
+  # --- State Management & Navigation ---
+  get: ^4.6.6
+  http: ^1.2.1
+  # --- UI & Responsive Design ---
+  googleapis_auth: ^1.6.0
+  flutter_screenutil: ^5.9.3
+  phosphor_flutter: ^2.0.0
+  flutter_svg: ^2.0.16
+  cached_network_image: ^3.4.1
+  pinput: ^5.0.0
+  country_picker: ^2.0.26
+
+  # --- Utilities ---
+  image_picker: ^1.1.2
+  url_launcher: ^6.3.1
+  uuid: ^4.5.1
+  shared_preferences: ^2.3.2
+  audioplayers: ^6.5.0     # Significant updates from 6.0
+  vibration: ^3.1.5        # Updated to embedding-v2 compatible version
+  intl: ^0.19.0            # Standard for 2025
+  provider: ^6.1.2
+  image: ^4.3.0
+  fl_chart: ^0.69.0        # careful with breaking changes here
+  google_fonts: ^6.2.1
+  file_picker: ^8.1.4
+  syncfusion_flutter_pdfviewer: ^27.1.52 # Updated to latest syncfusion version
+  flutter_dotenv: ^5.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.14.1
+  flutter_lints: ^5.0.0    # Updated to latest lints
+  test: ^1.25.8
+
+flutter_launcher_icons:
+  android: 'launcher_icon'
+  ios: true
+  image_path: 'assets/images/logo.png'
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/sounds/700-hz-beeps-86815.mp3
+    - assets/.env
+    - assets/service_account.json
+
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Inter-Thin.ttf
+          weight: 100
+        - asset: assets/fonts/Inter-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Inter-Black.ttf
+          weight: 900
+        - asset: assets/fonts/Inter-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Inter-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Inter-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/Inter-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/Inter-Bold.ttf
+          weight: 700
+        
